@@ -8,19 +8,19 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainScreenActivity  : AppCompatActivity() {
 
-    @SuppressLint("DefaultLocale", "SetTextI18n")
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainscreen) // Set the layout for this activity
 
         // Find the UI elements by their IDs
-        val forecastTextView = findViewById<TextView>(R.id.forecast_text_view)
-        val averageTempTextView = findViewById<TextView>(R.id.average_temp_text_view)
-        val backButton = findViewById<Button>(R.id.back_button)
+        val forecastTextView = findViewById<TextView>(R.id.forecasttextview)
+        val averageTempTextView = findViewById<TextView>(R.id.averagetemptextview)
+        val backButton = findViewById<Button>(R.id.backbutton)
 
         // Hardcoded data for days and temperatures
         val days = arrayOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
-        val maxTemps = arrayOf(25, 29, 22, 24, 20, 18, 16)
+        val maxTemps = arrayOf(20, 23, 22, 27, 29, 14, 17)
 
         // Build the forecast string using a loop
         var forecastText = "Daily Forecast:\n"

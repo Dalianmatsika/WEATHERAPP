@@ -8,10 +8,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/app_name_text_view"
+        android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/name_student_text_view"
+        android:layout_above="@+id/studentName"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
         android:text="SimpleWeather"
@@ -20,7 +20,7 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/name_student_text_view"
+        android:id="@+id/studentName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -30,19 +30,14 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/view_forecast_button"
+        android:id="@+id/forecastbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name_student_text_view"
+        android:layout_below="@+id/studentName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="View Forecast"
         tools:ignore="HardcodedText" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="395dp"
-        android:layout_height="235dp"
-        app:srcCompat="@drawable/weatherme" />
 
 </RelativeLayout>

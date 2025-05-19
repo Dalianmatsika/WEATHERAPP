@@ -10,17 +10,15 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main) // Set the layout for this activity
 
         // Find the UI elements by their IDs
-        val appNameTextView = findViewById<TextView>(R.id.app_name_text_view)
-        val nameStudentTextView = findViewById<TextView>(R.id.name_student_text_view)
-        val viewForecastButton = findViewById<Button>(R.id.view_forecast_button)
-        val ImageView = findViewById<ImageView>(R.id.imageView)
-
+        val appNameTextView = findViewById<TextView>(R.id.appName)
+        val nameStudentTextView = findViewById<TextView>(R.id.studentName)
+        val viewForecastButton = findViewById<Button>(R.id.forecastbutton)
 
         // Set the text for the UI elements
         appNameTextView.text = "Cape Weather"
