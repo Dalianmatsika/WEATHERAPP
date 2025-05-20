@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main) // Set the layout for this activity
 
         // Find the UI elements by their IDs
-        val appNameTextView = findViewById<TextView>(R.id.appName)
-        val nameStudentTextView = findViewById<TextView>(R.id.studentName)
+        val appNameTextView = findViewById<TextView>(R.id.appname)
+        val nameStudentTextView = findViewById<TextView>(R.id.studentname)
         val viewForecastButton = findViewById<Button>(R.id.forecastbutton)
 
         // Set the text for the UI elements

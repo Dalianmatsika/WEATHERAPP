@@ -24,6 +24,8 @@
         <!-- MainScreenActivity -->
         <activity android:name=".MainScreenActivity" />
 
+        <activity android:name=".DataScreenActivity" />
+
     </application>
 </manifest>
 
